@@ -1,6 +1,6 @@
 import requests as r
 
-from config import url, headers, json_data
+from config import url, headers, json_data, logger
 
 from rich import print
 
@@ -20,6 +20,7 @@ def get_urls(data: list):
     return [f'https://www.volkshochschule.de{item["url"]}' for item in data]
 
 
+@logger.catch
 def main():
     data = get_data_json()
     print(get_urls(data))

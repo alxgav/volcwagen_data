@@ -1,3 +1,17 @@
+import os
+from loguru import logger
+
+path = os.path.dirname(os.path.realpath(__file__))
+
+logger.add(
+    f"{path}/log/log.log",
+    format="{time} {level} {message}",
+    level="DEBUG",
+    serialize=False,
+    rotation="1 month",
+    compression="zip",
+)
+
 headers = {
     "User-Agent": "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0",
     "Accept": "*/*",
