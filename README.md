@@ -38,5 +38,5 @@ response = requests.post(
 ```
 ## Libraries
 ```bash
-pip install requests, pandas, selectolax, XlsxWriter
+pip install requests, pandas, selectolax, XlsxWriter, pydantic
 ```
