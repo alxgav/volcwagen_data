@@ -1,5 +1,5 @@
-# volcwagen_data
-vollcwagen_de collect all data, locations, adress and email adresses from this site.
+# volkswagen_data
+volkswagen_de collect all data, locations, adress and email adresses from this site.
 
 ## Task
 Hi. Please collect all data, locations, adress and email adresses from this site. Please export data in excel file.
@@ -33,9 +33,7 @@ headers = {
 ```bash
 response = requests.post(
     'https://www.volkshochschule.de/WEB-IES/sitekit-module/php/SP/SiteKit/Rpc/Server/Port.php',
-    cookies=cookies,
     headers=headers,
-    json=json_data,
 )
 ```
 ## Libraries
