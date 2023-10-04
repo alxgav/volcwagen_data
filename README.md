@@ -3,9 +3,11 @@ vollcwagen_de collect all data, locations, adress and email adresses from this s
 
 ## Task
 Hi. Please collect all data, locations, adress and email adresses from this site. Please export data in excel file.
-
+```bash
 https://www.volkshochschule.de/verbandswelt/volkshochschulen/alle-standorte.php?form=search-1.form&sp%3Afulltext%5B%5D=&sp%3Acategories%5B7679%5D%5B%5D=-&sp%3Acategories%5B7679%5D%5B%5D=__last__&action=submit
+```
 # header
+```bash
 headers = {
     'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/118.0',
     'Accept': '*/*',
@@ -25,14 +27,17 @@ headers = {
     # Requests doesn't support trailers
     # 'TE': 'trailers',
 }
+```
 # response
+```bash
 response = requests.post(
     'https://www.volkshochschule.de/WEB-IES/sitekit-module/php/SP/SiteKit/Rpc/Server/Port.php',
     cookies=cookies,
     headers=headers,
     json=json_data,
 )
-
+```
 ## Libraries
-
+```bash
 pin install requests, pandas, selectolax, XlsxWriter
+```
