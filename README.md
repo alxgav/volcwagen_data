@@ -38,5 +38,5 @@ response = requests.post(
 ```
 ## Libraries
 ```bash
-pin install requests, pandas, selectolax, XlsxWriter
+pip install requests, pandas, selectolax, XlsxWriter
 ```
